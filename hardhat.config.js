@@ -40,6 +40,12 @@ module.exports = {
                 url: MAINNET_RPC_URL,
             },
         },
+        goerli: {
+            url: GOERLI_RPC_URL || "",
+            accounts: [PRIVATE_KEY, PRIVATE_KEY_2],
+            chainId: 5,
+            blockConfirmations: 2,
+        },
     },
     etherscan: {
         apiKey: ETHERSCAN_API_KEY,
