@@ -1,5 +1,3 @@
-const { task } = require("hardhat/config")
-
 require("@nomiclabs/hardhat-waffle")
 require("@nomiclabs/hardhat-etherscan")
 require("hardhat-deploy")
@@ -9,13 +7,6 @@ require("hardhat-contract-sizer")
 require("dotenv").config()
 
 /** @type import('hardhat/config').HardhatUserConfig */
-// tasks
-task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
-    const accounts = await hre.ethers.getSigners()
-    for (const account of accounts) {
-        console.log(account.address)
-    }
-})
 
 const GOERLI_RPC_URL = process.env.GOERLI_RPC_URL
 const PRIVATE_KEY = process.env.PRIVATE_KEY || ""
