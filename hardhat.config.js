@@ -60,7 +60,7 @@ module.exports = {
         token: "MATIC",
     },
     mocha: {
-        timeout: 10000000, // 200 seconds
+        timeout: 10000000,
     },
     namedAccounts: {
         deployer: {
